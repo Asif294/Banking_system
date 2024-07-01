@@ -80,7 +80,7 @@ class WithdrawMoneyView(TransactionCreateMixin):
     title='Withdraw'
 
     def get_initial(self):
-        initial={'transaction_type':DEPOSIT}
+        initial={'transaction_type':WITHDRAWAL}
         return initial
     
     def form_valid(self,form):
