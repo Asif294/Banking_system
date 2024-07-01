@@ -6,3 +6,4 @@ django-environ
 psycopg2
 sqlparse
 tzdata
+dj_database_url
