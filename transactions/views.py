@@ -231,6 +231,6 @@ class TransferAmountView(LoginRequiredMixin, FormView):
             )
 
             messages.success(self.request, "Amount transferred successfully.")
-            send_transaction_email(self.request.user, amount, "Loan Request Message", "transactions/transfer_email.html")
+            send_transaction_email(self.request.user, amount, "Transfer money Message", "transactions/transfer_email.html")
             return super().form_valid(form)
         
