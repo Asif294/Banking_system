@@ -17,7 +17,7 @@ from django.contrib.auth.forms import  PasswordChangeForm
 class UserRegistatinView(FormView):
     template_name='account/user_registation.html'
     form_class=UserRegistrationFrom
-    success_url=reverse_lazy('login')
+    success_url=reverse_lazy('home')
 
     def form_valid(self, form):
         
